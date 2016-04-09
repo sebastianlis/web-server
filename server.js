@@ -28,7 +28,7 @@ var http = require("http");
 var PORT = process.env.PORT;
 
 var server = http.createServer(function(req, res){
-        rew.end("hello world!! HEROKU");
+        req.end("hello world!! HEROKU");
 });
 
 server.listen(PORT);
